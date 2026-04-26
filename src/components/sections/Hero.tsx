@@ -78,6 +78,23 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Acronym expansion */}
+          <p style={{
+            fontSize: '0.72rem',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            fontWeight: 500,
+            color: 'var(--text-dim)',
+            textAlign: 'center',
+            margin: '20px 0 28px',
+          }}>
+            <span style={{ color: 'var(--primary)', fontWeight: 800 }}>A</span>dvanced{' '}
+            <span style={{ color: 'var(--primary)', fontWeight: 800 }}>A</span>utomation,{' '}
+            <span style={{ color: 'var(--secondary)', fontWeight: 800 }}>R</span>esilience &amp;{' '}
+            <span style={{ color: 'var(--secondary)', fontWeight: 800 }}>A</span>rtificial{' '}
+            <span style={{ color: 'var(--accent)', fontWeight: 800 }}>i</span>ntelligence
+          </p>
+
           {/* Badge */}
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 28 }}>
             <span style={{
