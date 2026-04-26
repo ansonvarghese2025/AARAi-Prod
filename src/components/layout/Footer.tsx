@@ -1,16 +1,18 @@
 'use client'
 
+import Image from 'next/image'
+
 const serviceLinks = [
-  { label: 'Infrastructure Support', href: '#services' },
-  { label: 'Cloud Solutions',        href: '#services' },
-  { label: 'Digital Marketing',      href: '#services' },
-  { label: 'AI Agent as a Service',  href: '#services' },
+  { label: 'Infrastructure Support', href: '/services/infrastructure-support' },
+  { label: 'Cloud Solutions',        href: '/services/cloud-solutions'        },
+  { label: 'Digital Marketing',      href: '/services/digital-marketing'      },
+  { label: 'AI Agent as a Service',  href: '/services/ai-agent-as-a-service'  },
 ]
 
 const companyLinks = [
-  { label: 'About Us',       href: '#why-aarai' },
-  { label: 'How It Works',   href: '#process'   },
-  { label: 'Contact',        href: '#contact'   },
+  { label: 'About Us',       href: '/#why-aarai' },
+  { label: 'How It Works',   href: '/#process'   },
+  { label: 'Contact',        href: '/#contact'   },
 ]
 
 export default function Footer() {
@@ -34,17 +36,25 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-              <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)" />
-                <path d="M16 6L26 24H6L16 6Z" fill="none" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-                <circle cx="16" cy="18" r="3" fill="white" fillOpacity="0.9"/>
-                <defs>
-                  <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#00c8ff"/>
-                    <stop offset="1" stopColor="#7b5fff"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+              <div style={{
+                width: 52,
+                height: 52,
+                borderRadius: 12,
+                overflow: 'hidden',
+                background: '#04080f',
+                flexShrink: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <Image
+                  src="/logo.png"
+                  alt="AARAi Solutions"
+                  width={52}
+                  height={52}
+                  style={{ objectFit: 'contain', mixBlendMode: 'screen', display: 'block' }}
+                />
+              </div>
               <span style={{
                 fontSize: '1.1rem',
                 fontWeight: 800,

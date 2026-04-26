@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const navLinks = [
-  { label: 'Services',    href: '#services'  },
-  { label: 'Why AARAi',   href: '#why-aarai' },
-  { label: 'How It Works',href: '#process'   },
-  { label: 'Contact',     href: '#contact'   },
+  { label: 'Services',    href: '/#services'  },
+  { label: 'Why AARAi',   href: '/#why-aarai' },
+  { label: 'How It Works',href: '/#process'   },
+  { label: 'Contact',     href: '/#contact'   },
 ]
 
 export default function Navbar() {
@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 
         {/* Logo */}
-        <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <div style={{
             width: 52, height: 52,
             borderRadius: 12,
@@ -81,7 +81,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }} className="hidden-mobile">
-          <a href="#contact" className="btn-primary" style={{ padding: '10px 22px', fontSize: '0.875rem' }}>
+          <a href="/#contact" className="btn-primary" style={{ padding: '10px 22px', fontSize: '0.875rem' }}>
             Get Started →
           </a>
         </div>
@@ -131,7 +131,7 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary" style={{ marginTop: 20, display: 'inline-flex' }}
+          <a href="/#contact" className="btn-primary" style={{ marginTop: 20, display: 'inline-flex' }}
              onClick={() => setMenuOpen(false)}>
             Get Started →
           </a>

@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="container">
 
           {/* Animated Logo Showcase */}
-          <div className="logo-showcase">
+          <div className="logo-showcase hero-animate" style={{ animationDelay: '0s' }}>
             {/* Ambient glow base */}
             <div className="logo-glow-base" />
 
@@ -79,7 +79,8 @@ export default function Hero() {
           </div>
 
           {/* Acronym expansion */}
-          <p style={{
+          <p className="hero-animate" style={{
+            animationDelay: '0.15s',
             fontSize: '0.72rem',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -96,7 +97,7 @@ export default function Hero() {
           </p>
 
           {/* Badge */}
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 28 }}>
+          <div className="hero-animate" style={{ animationDelay: '0.3s', display: 'flex', justifyContent: 'center', marginBottom: 28 }}>
             <span style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -122,7 +123,8 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 style={{
+          <h1 className="hero-animate" style={{
+            animationDelay: '0.45s',
             fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
             fontWeight: 900,
             lineHeight: 1.08,
@@ -137,7 +139,8 @@ export default function Hero() {
           </h1>
 
           {/* Sub-copy */}
-          <p style={{
+          <p className="hero-animate" style={{
+            animationDelay: '0.6s',
             fontSize: '1.15rem',
             lineHeight: 1.9,
             maxWidth: 640,
@@ -157,7 +160,7 @@ export default function Hero() {
           </p>
 
           {/* CTAs */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 72 }}>
+          <div className="hero-animate" style={{ animationDelay: '0.75s', display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 72 }}>
             <a href="#services" className="btn-primary" style={{ fontSize: '1rem', padding: '14px 32px' }}>
               Explore Services →
             </a>
@@ -167,7 +170,8 @@ export default function Hero() {
           </div>
 
           {/* Stats row */}
-          <div style={{
+          <div className="hero-animate" style={{
+            animationDelay: '0.9s',
             display: 'flex',
             justifyContent: 'center',
             gap: 16,

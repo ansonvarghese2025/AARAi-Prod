@@ -1,71 +1,7 @@
 'use client'
 
-const services = [
-  {
-    icon: '🖥️',
-    color: '#00c8ff',
-    bg: 'rgba(0,200,255,0.12)',
-    title: 'Infrastructure Support',
-    tagline: 'Always-on reliability',
-    description:
-      'End-to-end managed infrastructure that keeps your systems healthy, secure, and running at peak performance — around the clock.',
-    features: [
-      '24/7 monitoring & incident response',
-      'Network architecture & optimization',
-      'Server provisioning & patching',
-      'Disaster recovery & backup planning',
-      'Hardware lifecycle management',
-    ],
-  },
-  {
-    icon: '☁️',
-    color: '#7b5fff',
-    bg: 'rgba(123,95,255,0.12)',
-    title: 'Cloud Solutions',
-    tagline: 'Scale with confidence',
-    description:
-      'Cloud strategy, migration, and ongoing management across AWS, Azure, and GCP — designed for cost-efficiency and resilience.',
-    features: [
-      'Multi-cloud architecture & design',
-      'Lift-and-shift & refactoring migrations',
-      'Cost optimization & FinOps',
-      'Kubernetes & container orchestration',
-      'Cloud security & compliance (SOC 2, ISO)',
-    ],
-  },
-  {
-    icon: '📈',
-    color: '#ffb86c',
-    bg: 'rgba(255,184,108,0.12)',
-    title: 'Digital Marketing',
-    tagline: 'Growth that compounds',
-    description:
-      'Data-driven digital marketing that turns traffic into revenue — from SEO and paid media to content and conversion optimization.',
-    features: [
-      'SEO strategy & technical audits',
-      'Paid media (Google, Meta, LinkedIn)',
-      'Content creation & brand storytelling',
-      'Analytics dashboards & attribution',
-      'Email & marketing automation',
-    ],
-  },
-  {
-    icon: '🤖',
-    color: '#00e676',
-    bg: 'rgba(0,230,118,0.10)',
-    title: 'AI Agent as a Service',
-    tagline: 'Automate the complex',
-    description:
-      'Deploy custom AI agents that handle real business workflows — customer support, data pipelines, research, and more — with minimal human oversight.',
-    features: [
-      'Custom LLM-powered agent design',
-      'Process automation & orchestration',
-      'CRM, ERP, and API integrations',
-      'Agent monitoring & continuous tuning',
-      'On-premise or cloud deployment',
-    ],
-  },
-]
+import Link from 'next/link'
+import { services } from '@/lib/services-data'
 
 export default function Services() {
   return (
@@ -172,8 +108,8 @@ export default function Services() {
               </ul>
 
               {/* CTA link */}
-              <a
-                href="#contact"
+              <Link
+                href={`/services/${svc.slug}`}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -189,7 +125,7 @@ export default function Services() {
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.gap = '6px' }}
               >
                 Learn more <span>→</span>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
