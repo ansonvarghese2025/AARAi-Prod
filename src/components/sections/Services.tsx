@@ -1,7 +1,18 @@
 'use client'
 
 import Link from 'next/link'
+import { motion } from 'motion/react'
 import { services } from '@/lib/services-data'
+
+const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number]
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 28 },
+  show:   (i: number) => ({
+    opacity: 1, y: 0,
+    transition: { duration: 0.6, ease: EASE, delay: i * 0.1 },
+  }),
+}
 
 export default function Services() {
   return (
@@ -23,10 +34,10 @@ export default function Services() {
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <div className="section-label" style={{ justifyContent: 'center' }}>Our Services</div>
           <h2 className="section-heading" style={{ margin: '0 auto 16px' }}>
-            Everything you need to <span className="gradient-text">scale smart</span>
+            Four ways we help your <span className="gradient-text">business run better</span>
           </h2>
           <p className="section-subtext" style={{ margin: '0 auto', textAlign: 'center' }}>
-            Four focused service pillars — each one battle-tested to deliver measurable outcomes for businesses of every size.
+            Whether it&apos;s keeping your IT running, getting found online, or saving hours of repetitive work — we&apos;ve got it covered.
           </p>
         </div>
 
@@ -36,8 +47,17 @@ export default function Services() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
           gap: 24,
         }}>
-          {services.map((svc) => (
-            <div key={svc.title} className="glass-card" style={{ padding: '32px 28px' }}>
+          {services.map((svc, i) => (
+            <motion.div
+              key={svc.title}
+              className="glass-card"
+              style={{ padding: '32px 28px' }}
+              custom={i}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, margin: '-60px' }}
+            >
 
               {/* Icon */}
               <div className="service-icon" style={{ background: svc.bg }}>
@@ -126,7 +146,7 @@ export default function Services() {
               >
                 Learn more <span>→</span>
               </Link>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

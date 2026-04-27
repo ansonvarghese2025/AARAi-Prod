@@ -4,70 +4,70 @@ export const services = [
     icon: '🖥️',
     color: '#00c8ff',
     bg: 'rgba(0,200,255,0.12)',
-    title: 'Infrastructure Support',
-    tagline: 'Always-on reliability',
+    title: 'IT Support & Management',
+    tagline: 'Your IT, sorted',
     description:
-      'End-to-end managed infrastructure that keeps your systems healthy, secure, and running at peak performance — around the clock.',
+      'We keep your computers, internet, and systems running — 24/7. No tech headaches, no downtime, just everything working when you need it.',
     longDescription:
-      'Round-the-clock managed infrastructure services that keep your entire technology stack healthy, secure, and performing at peak efficiency. We act as your dedicated IT operations team — handling everything from routine maintenance to emergency incident response — so you can focus on building your business.',
+      'Running a business is hard enough without IT problems slowing you down. We take care of everything — from setting up your computers to fixing issues before they affect your day. Think of us as your own IT team, available around the clock, without the cost of hiring one full time.',
     features: [
-      '24/7 monitoring & incident response',
-      'Network architecture & optimization',
-      'Server provisioning & patching',
-      'Disaster recovery & backup planning',
-      'Hardware lifecycle management',
+      'We spot problems before they affect your business',
+      'Your internet, network & computers set up and managed',
+      'Regular updates so nothing breaks unexpectedly',
+      'All your data backed up — even if hardware fails',
+      'Someone to call when something goes wrong',
     ],
     stats: [
-      { value: '99.9%', label: 'Uptime SLA' },
-      { value: '<5 min', label: 'Incident Response' },
-      { value: '24/7', label: 'Coverage' },
+      { value: '99.9%', label: 'Uptime Guarantee' },
+      { value: '<5 min', label: 'Response Time' },
+      { value: '24/7', label: 'Support Available' },
     ],
     benefits: [
       {
-        title: 'Zero Downtime Commitment',
+        title: 'No More Surprise Breakdowns',
         description:
-          'Proactive monitoring catches issues before they impact operations, keeping SLA breaches a thing of the past.',
+          'We watch your systems round the clock and fix small issues before they become big ones that stop your business.',
       },
       {
-        title: 'Predictable Costs',
+        title: 'One Simple Monthly Cost',
         description:
-          'Fixed monthly fees replace unpredictable capital expenditure and emergency call-out surprises.',
+          'A flat monthly fee — no surprise bills, no emergency call-out charges, no unexpected costs.',
       },
       {
-        title: 'Certified Expert Team',
+        title: 'Real Experts on Hand',
         description:
-          'Vendor-certified engineers across network, server, security, and backup disciplines — on call round the clock.',
+          'Qualified engineers who know what they\'re doing — available day and night, not just 9 to 5.',
       },
       {
-        title: 'Scales With You',
+        title: 'Grows With Your Business',
         description:
-          'Infrastructure that grows with your headcount and workloads without expensive re-architecture projects.',
+          'Whether you take on two staff or twenty, we scale your IT with you — no expensive overhauls.',
       },
     ],
     process: [
       {
         step: '01',
-        title: 'Infrastructure Audit',
+        title: 'We Review What You Have',
         description:
-          'Map your full environment, identify vulnerabilities, and document every system and dependency.',
+          'We take a look at your current setup — computers, internet, software — and spot anything that needs attention.',
       },
       {
         step: '02',
-        title: 'Onboarding',
+        title: 'We Get Everything in Order',
         description:
-          'Deploy monitoring agents, establish runbooks, and set alerting thresholds tailored to your SLAs.',
+          'We set up monitoring, security, and backups — and make sure your team knows how to reach us.',
       },
       {
         step: '03',
-        title: 'Operations',
+        title: 'We Keep Things Running',
         description:
-          '24/7 monitoring, routine patching, capacity planning, and swift incident response with full audit trails.',
+          'From that point on, we handle updates, fix issues, and check in regularly — so you don\'t have to think about it.',
       },
       {
         step: '04',
-        title: 'Monthly Reviews',
+        title: 'Monthly Check-ins',
         description:
-          'Detailed performance and security reports with proactive recommendations to keep your stack ahead.',
+          'Every month we send you a plain-English report on how things are running and what\'s coming next.',
       },
     ],
   },
@@ -77,69 +77,69 @@ export const services = [
     color: '#7b5fff',
     bg: 'rgba(123,95,255,0.12)',
     title: 'Cloud Solutions',
-    tagline: 'Scale with confidence',
+    tagline: 'Work from anywhere, pay less',
     description:
-      'Cloud strategy, migration, and ongoing management across AWS, Azure, and GCP — designed for cost-efficiency and resilience.',
+      'Move your business to the cloud — access your files from anywhere, stop paying for servers, and let us handle the technical side.',
     longDescription:
-      'Cloud transformation from strategy to full-scale execution. We design, migrate, and operate cloud environments across AWS, Azure, and GCP — architected for cost efficiency, elastic performance, and long-term resilience. Whether lifting and shifting or rebuilding cloud-native, we deliver with zero-downtime precision.',
+      'Still relying on a server in the back office or emailing files back and forth? We move businesses like yours to the cloud — so your team can work from anywhere, your files are always backed up, and you\'re only paying for what you actually use. No technical knowledge needed on your end.',
     features: [
-      'Multi-cloud architecture & design',
-      'Lift-and-shift & refactoring migrations',
-      'Cost optimization & FinOps',
-      'Kubernetes & container orchestration',
-      'Cloud security & compliance (SOC 2, ISO)',
+      'Move your files and software online — access from anywhere',
+      'Work from home or on the road, just like you\'re in the office',
+      'Typically reduces technology costs by 30–40%',
+      'Your data backed up automatically every single day',
+      'Add more users or storage in minutes as you grow',
     ],
     stats: [
-      { value: '40%', label: 'Avg. Cost Reduction' },
+      { value: '40%', label: 'Avg. Cost Saving' },
       { value: '3+', label: 'Cloud Platforms' },
-      { value: '0', label: 'Downtime Migrations' },
+      { value: '0', label: 'Disruption to Your Day' },
     ],
     benefits: [
       {
-        title: 'Significant Cost Savings',
+        title: 'Lower Monthly Bills',
         description:
-          'FinOps practices and right-sizing consistently achieve 30–50% reductions in cloud spend within the first quarter.',
+          'Most businesses save 30–40% on technology costs after moving to the cloud. No more expensive hardware to replace.',
       },
       {
-        title: 'Multi-Cloud Flexibility',
+        title: 'Work From Anywhere',
         description:
-          'Avoid vendor lock-in with architecture patterns that let you move workloads freely between providers.',
+          'Your team gets access to everything they need from any device — whether they\'re at home, on site, or travelling.',
       },
       {
-        title: 'Enterprise Security Built-in',
+        title: 'Your Data is Always Safe',
         description:
-          'Security and compliance baked into every layer — from IAM policies to encryption and audit logging.',
+          'Everything is automatically backed up. If a laptop gets lost or stolen, your data is still secure and recoverable.',
       },
       {
-        title: 'Auto-Scaling Confidence',
+        title: 'Easy to Scale',
         description:
-          'Handle traffic spikes and seasonal peaks without overprovisioning or manual intervention.',
+          'Hiring more staff? Adding a new location? We add capacity in minutes — no waiting weeks for new hardware.',
       },
     ],
     process: [
       {
         step: '01',
-        title: 'Readiness Assessment',
+        title: 'We Look at What You\'re Using',
         description:
-          'Evaluate workloads, run a TCO analysis, and gap-assess against your target cloud architecture.',
+          'We review your current setup and work out exactly what can move to the cloud and how much you\'ll save.',
       },
       {
         step: '02',
-        title: 'Architecture Design',
+        title: 'We Build a Simple Plan',
         description:
-          'Blueprint your environment — network topology, compute, storage, security, and cost guardrails.',
+          'We show you what the new setup will look like, what it\'ll cost, and how we\'ll move everything across.',
       },
       {
         step: '03',
-        title: 'Phased Migration',
+        title: 'We Move Everything Over',
         description:
-          'Execute migrations in priority waves with rollback plans and zero unplanned downtime.',
+          'We handle the migration for you — carefully and without disrupting your working day.',
       },
       {
         step: '04',
-        title: 'Continuous Optimisation',
+        title: 'We Keep Optimising',
         description:
-          'Post-migration FinOps reviews, security hardening, and performance tuning on a regular cadence.',
+          'After moving, we regularly review your usage to make sure you\'re not paying for more than you need.',
       },
     ],
   },
@@ -149,69 +149,69 @@ export const services = [
     color: '#ffb86c',
     bg: 'rgba(255,184,108,0.12)',
     title: 'Digital Marketing',
-    tagline: 'Growth that compounds',
+    tagline: 'Get found. Get customers.',
     description:
-      'Data-driven digital marketing that turns traffic into revenue — from SEO and paid media to content and conversion optimization.',
+      'Get found on Google by people in your area who are already looking for what you offer — and turn them into paying customers.',
     longDescription:
-      'Data-driven marketing strategies that turn your digital presence into a compounding revenue engine. Every tactic — from technical SEO and paid media to content creation and marketing automation — is measured against real business outcomes, not vanity metrics.',
+      'Most local businesses are invisible online — not because what they do isn\'t great, but because nobody\'s told Google about it. We fix that. We make sure you show up when locals are searching, run ads that bring in real customers, and handle your social media — so you can focus on doing the work.',
     features: [
-      'SEO strategy & technical audits',
-      'Paid media (Google, Meta, LinkedIn)',
-      'Content creation & brand storytelling',
-      'Analytics dashboards & attribution',
-      'Email & marketing automation',
+      'Show up on Google when locals search for your services',
+      'Facebook and Google ads that bring in real customers',
+      'Social media posts and content written and published for you',
+      'Clear monthly reports you\'ll actually understand',
+      'Email campaigns that bring existing customers back',
     ],
     stats: [
-      { value: '3×', label: 'Average ROI' },
-      { value: '100%', label: 'Attribution Tracked' },
-      { value: 'Weekly', label: 'Performance Reports' },
+      { value: '3×', label: 'Average Return on Spend' },
+      { value: '100%', label: 'Tracked & Reported' },
+      { value: 'Weekly', label: 'Performance Updates' },
     ],
     benefits: [
       {
-        title: 'Full-Funnel Visibility',
+        title: 'More Local Customers',
         description:
-          'Custom dashboards connecting top-of-funnel traffic all the way through to closed revenue.',
+          'When someone nearby searches for what you do, we make sure your business shows up — not a competitor.',
       },
       {
-        title: 'Content That Converts',
+        title: 'Ads That Pay for Themselves',
         description:
-          'Performance-first content built around search intent, buyer journey stages, and conversion goals.',
+          'We run your Google and Facebook ads and make sure every pound spent is bringing in more than it costs.',
       },
       {
-        title: 'ROAS-Optimised Paid Media',
+        title: 'We Handle the Content',
         description:
-          'Campaigns optimised daily for return on ad spend — not just impressions and click-through rates.',
+          'No time to post on social media or write blogs? We take care of it — in your voice, for your audience.',
       },
       {
-        title: 'Always-On Nurture',
+        title: 'Reports in Plain English',
         description:
-          'Automation sequences that qualify and nurture leads around the clock while your team focuses on closing.',
+          'Every month we show you exactly what we did, how many people it reached, and what it led to in real customers.',
       },
     ],
     process: [
       {
         step: '01',
-        title: 'Marketing Audit',
+        title: 'We Review Your Online Presence',
         description:
-          'Deep-dive into your current stack, SEO health, attribution model, and competitive landscape.',
+          'We look at where you currently show up online, what your competitors are doing, and where the gaps are.',
       },
       {
         step: '02',
-        title: 'Growth Roadmap',
+        title: 'We Build a 90-Day Plan',
         description:
-          'A 90-day growth plan with prioritised channels, content calendar, and OKRs tied to revenue targets.',
+          'A clear plan — which channels we\'ll use, what we\'ll create, and what results you can expect.',
       },
       {
         step: '03',
-        title: 'Multi-Channel Execution',
+        title: 'We Get to Work',
         description:
-          'Launch campaigns, publish content, and configure automation workflows across agreed channels.',
+          'We launch your ads, publish your content, and set up campaigns — handling everything from start to finish.',
       },
       {
         step: '04',
-        title: 'Optimise & Scale',
+        title: 'We Improve Every Week',
         description:
-          'Weekly reporting, continuous A/B testing, and budget reallocation toward top-performing channels.',
+          'We track what\'s working, cut what isn\'t, and put more effort into whatever is bringing in customers.',
       },
     ],
   },
@@ -220,70 +220,70 @@ export const services = [
     icon: '🤖',
     color: '#00e676',
     bg: 'rgba(0,230,118,0.10)',
-    title: 'AI Agent as a Service',
-    tagline: 'Automate the complex',
+    title: 'AI Automation',
+    tagline: 'Let AI handle the repetitive work',
     description:
-      'Deploy custom AI agents that handle real business workflows — customer support, data pipelines, research, and more — with minimal human oversight.',
+      'Stop doing the same tasks over and over. We build AI tools that answer enquiries, take bookings, and handle routine work — automatically, day and night.',
     longDescription:
-      'Purpose-built AI agents that take end-to-end ownership of complex, repetitive business workflows. From customer-facing support bots to internal data processing pipelines, our agents integrate with your existing tools, operate with minimal oversight, and learn from every interaction — delivering compounding efficiency gains over time.',
+      'Think about how much time your team spends answering the same questions, chasing the same emails, or entering the same information into a spreadsheet. We build AI tools that handle all of that for you — automatically, around the clock, without mistakes. Your team gets their time back. Your customers get faster responses.',
     features: [
-      'Custom LLM-powered agent design',
-      'Process automation & orchestration',
-      'CRM, ERP, and API integrations',
-      'Agent monitoring & continuous tuning',
-      'On-premise or cloud deployment',
+      'Answers customer questions automatically, day and night',
+      'Takes bookings and enquiries while your team is busy',
+      'Connects to tools you already use — email, website, and more',
+      'You see exactly what it does — nothing is hidden',
+      'Up and running in under 48 hours, no big IT project',
     ],
     stats: [
-      { value: '80%', label: 'Time Saved' },
-      { value: '<48h', label: 'First Deployment' },
-      { value: '100%', label: 'Auditable' },
+      { value: '80%', label: 'Less Repetitive Work' },
+      { value: '<48h', label: 'Up and Running' },
+      { value: '24/7', label: 'Always Working' },
     ],
     benefits: [
       {
-        title: 'Dramatic Time Savings',
+        title: 'Your Team Gets Time Back',
         description:
-          'Agents running 24/7 on high-volume workflows consistently deliver 60–80% reductions in manual processing time.',
+          'The repetitive stuff — answering FAQs, chasing responses, logging information — gets done automatically.',
       },
       {
-        title: 'Fits Your Stack',
+        title: 'Works With What You Already Have',
         description:
-          'Deep integrations with tools your team already uses — Salesforce, HubSpot, SAP, Slack, email, and custom APIs.',
+          'We connect AI tools to your existing email, website, and software — no need to change how you work.',
       },
       {
-        title: 'Data Sovereignty',
+        title: 'Your Data Stays With You',
         description:
-          'On-premise or private cloud deployment ensures sensitive business data never leaves your controlled environment.',
+          'We can run everything on your own systems if needed — your customer data stays private and in your control.',
       },
       {
-        title: 'Full Audit Trail',
+        title: 'You\'re Always in Control',
         description:
-          'Every agent decision is logged and explainable — meeting compliance requirements and giving your team full oversight.',
+          'You can see exactly what the AI is doing and saying. If you ever want to change something, just ask us.',
       },
     ],
     process: [
       {
         step: '01',
-        title: 'Workflow Discovery',
+        title: 'We Find the Time-Wasters',
         description:
-          'Map your highest-value, highest-volume workflows and identify which are best suited for AI automation.',
+          'We talk to your team and find the tasks that eat the most time — the things that could easily be automated.',
       },
       {
         step: '02',
-        title: 'Agent Architecture',
+        title: 'We Design the Solution',
         description:
-          'Design agent logic, tool integrations, guardrails, and human-in-the-loop checkpoints for each workflow.',
+          'We plan exactly how the AI will work, what it\'ll say, and how it connects to your existing systems.',
       },
       {
         step: '03',
-        title: 'Build & Validate',
+        title: 'We Build and Test It',
         description:
-          'Develop agents in a sandboxed environment, test against real workloads, and refine until production-ready.',
+          'We build it, test it thoroughly, and make sure it works exactly as expected before going live.',
       },
       {
         step: '04',
-        title: 'Deploy & Tune',
+        title: 'We Launch and Keep It Sharp',
         description:
-          'Release to production with monitoring dashboards, then continuously improve based on real-world data.',
+          'Once live, we monitor it, improve it over time, and make sure it keeps performing well for your business.',
       },
     ],
   },

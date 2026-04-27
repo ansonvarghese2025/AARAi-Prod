@@ -1,62 +1,73 @@
+'use client'
+
+import { motion } from 'motion/react'
+
+const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number]
+
+const stagger = (i: number) => ({
+  opacity: 1, y: 0,
+  transition: { duration: 0.55, ease: EASE, delay: i * 0.08 },
+})
+
 const pillars = [
   {
     icon: '⚡',
     color: '#00c8ff',
-    title: 'Speed to Value',
-    body: 'From kickoff to delivery in days, not months. Our pre-built playbooks and automation-first approach accelerate every engagement.',
+    title: 'Up and Running Fast',
+    body: 'Most clients are set up and seeing results within days — not weeks or months of back-and-forth.',
   },
   {
     icon: '🔐',
     color: '#7b5fff',
-    title: 'Security First',
-    body: 'Zero-trust architecture, SOC 2-aligned practices, and continuous threat monitoring baked into every service we deliver.',
+    title: 'Your Data is Safe',
+    body: 'We protect your business data, passwords, and systems properly — so you never have to worry about hackers or data loss.',
   },
   {
     icon: '📊',
     color: '#ffb86c',
-    title: 'Data-Driven Decisions',
-    body: 'Every strategy is backed by real metrics. We instrument, measure, and iterate — so you always know what is working and why.',
+    title: 'No Guesswork',
+    body: 'We give you clear, simple reports so you always know what\'s working, what it\'s costing, and what you\'re getting back.',
   },
   {
     icon: '🌐',
     color: '#00e676',
-    title: 'True Full-Stack',
-    body: 'Infrastructure, cloud, marketing, and AI under one roof. No vendor juggling — just a single accountable partner for all your growth needs.',
+    title: 'One Company for Everything',
+    body: 'IT, cloud, marketing, and AI — all handled by one team. No juggling suppliers or explaining yourself to different people.',
   },
   {
     icon: '🤝',
     color: '#ff7f50',
-    title: 'Dedicated Partnership',
-    body: 'A named team that knows your stack and goals. Slack-first communication, weekly syncs, and transparent SLAs — always.',
+    title: 'A Team That Knows You',
+    body: 'You get a real named contact who understands your business. No call centres, no ticket queues — just a person you can ring.',
   },
   {
     icon: '🔄',
     color: '#00c8ff',
-    title: 'Continuous Improvement',
-    body: 'We treat every engagement as an evolving product. Quarterly reviews, roadmap updates, and proactive recommendations keep you ahead.',
+    title: 'We Keep Getting Better',
+    body: 'We check in regularly, report back honestly, and always look for ways to save you money or time as your business grows.',
   },
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Discovery Call',
-    body: 'We map your current stack, goals, pain points, and growth targets in a focused 45-minute session.',
+    title: 'A Quick Chat',
+    body: 'We have a free 45-minute call to understand your business, what\'s working, and what\'s causing headaches.',
   },
   {
     num: '02',
-    title: 'Custom Blueprint',
-    body: 'Our architects design a tailored roadmap — services, timelines, and measurable milestones — specific to your business.',
+    title: 'A Clear Plan',
+    body: 'We put together a simple plan — what we\'ll do, when we\'ll do it, and what it\'ll cost. No jargon, no surprises.',
   },
   {
     num: '03',
-    title: 'Rapid Onboarding',
-    body: 'Your dedicated team kicks off within 72 hours. Access dashboards, integrations, and your first deliverables go live fast.',
+    title: 'We Get Started',
+    body: 'Your dedicated contact gets to work within 72 hours. You\'ll see progress fast — not months of setup.',
   },
   {
     num: '04',
-    title: 'Scale & Grow',
-    body: 'Ongoing management, optimization cycles, and AI-driven enhancements keep your competitive edge sharp.',
+    title: 'We Keep Improving',
+    body: 'We manage and improve things as your business grows — checking in regularly so nothing ever slips.',
   },
 ]
 
@@ -82,13 +93,13 @@ export default function WhyAARAi() {
             <div>
               <div className="section-label">Why AARAi</div>
               <h2 className="section-heading">
-                Built for businesses that <span className="gradient-text">can&apos;t afford to slow down</span>
+                Technology shouldn&apos;t be <span className="gradient-text">this complicated</span>
               </h2>
               <p className="section-subtext" style={{ marginBottom: 36 }}>
-                We founded AARAi Solutions with a single belief: great technology and smart marketing should be accessible to every ambitious business — not just enterprises with massive budgets.
+                We started AARAi because too many good local businesses were being let down by technology — overcharged, ignored, or sold things they didn&apos;t need.
               </p>
               <p className="section-subtext">
-                Our team brings together cloud architects, AI engineers, and marketing strategists who operate as an extension of your team — aligned to your outcomes, not just deliverables.
+                We do things differently. Plain English, fair prices, and a team that actually picks up the phone.
               </p>
 
               <div style={{ marginTop: 40, display: 'flex', gap: 12 }}>
@@ -103,8 +114,15 @@ export default function WhyAARAi() {
               gridTemplateColumns: '1fr 1fr',
               gap: 16,
             }}>
-              {pillars.map((p) => (
-                <div key={p.title} className="glass-card" style={{ padding: '22px 20px' }}>
+              {pillars.map((p, i) => (
+                <motion.div
+                  key={p.title}
+                  className="glass-card"
+                  style={{ padding: '22px 20px' }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={stagger(i)}
+                  viewport={{ once: true, margin: '-40px' }}
+                >
                   <div style={{
                     fontSize: '1.5rem',
                     marginBottom: 12,
@@ -124,7 +142,7 @@ export default function WhyAARAi() {
                   <p style={{ fontSize: '0.82rem', lineHeight: 1.65, color: 'var(--text-muted)', margin: 0 }}>
                     {p.body}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -164,7 +182,13 @@ export default function WhyAARAi() {
             position: 'relative',
           }}>
             {steps.map((step, i) => (
-              <div key={step.num} style={{ position: 'relative', textAlign: 'center' }}>
+              <motion.div
+                key={step.num}
+                style={{ position: 'relative', textAlign: 'center' }}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={stagger(i)}
+                viewport={{ once: true, margin: '-40px' }}
+              >
                 {/* Connector line (between cards) */}
                 {i < steps.length - 1 && (
                   <div style={{
@@ -215,7 +239,7 @@ export default function WhyAARAi() {
                     {step.body}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
